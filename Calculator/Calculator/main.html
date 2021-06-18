@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="center-form">
+    <div class="container">
+        <h1 class="text">TIP CALCULATOR</h1>
+        <div class="wrapper">
+
+            <p class="text">Total Bill Amount <br></p>
+
+             
+            <input type="text" id="amount" value="1.00">
+<!--Tip Percent dropdown-->
+            <p class="text">Tip Percentage?</p>
+            <div class="center-button">
+            <select id="services">
+                <option selected disabled hidden>
+                    Choose Percentage
+                </option>
+                <option value="0.25">25% - Excellent</option>
+                <option value="0.20">20% - Great</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+        </div>
+
+            <p class="text">Total number of people</p>
+
+            <input type="text" id="persons" placeholder="Number of guest">
+            
+            <div class="center-button">
+                <button id="calculate" onclick="calcTip()">Calculate</button>
+            </div>
+        </div>
+        <div id="demo">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+<!--this should output the amount for each person to pay-->
+       <div class="total">
+            <p class="text">Make Your Server's Day!</p>
+        </div>
+        
+        <div class="popup" onclick="calcTip()">
+            <span style="color: aliceblue;" type="text" id="results"></span>   
+          </div>
+    </div>
+
+    <div id="form-box">
+<form action="">
+    <p>This is a p</p>
+    <input type="text">
+</form>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+
+</html>
